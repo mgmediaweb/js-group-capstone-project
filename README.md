@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Leaderboard
+# JS Group Capstone Project
 
-> this application lists the scores of players of a certain game (determined by the user), in this app the Leaderboard REST API is used, where the participants and their scores are registered.
+> information comming soon
 
 
 ## Built With
@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://mgmediaweb.github.io/leaderboard/dist/)
+[Live Demo Link](https://mgmediaweb.github.io/js-group-capstone-project/dist/)
 
 ### Prerequisites
 
@@ -30,7 +30,7 @@ To view this document on your local computer:
 
 ### Usage
 
-[Leaderboard REST API](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3)
+
 
 ### Run tests
 
@@ -46,6 +46,17 @@ To view this document on your local computer:
 - GitHub: [@mgmediaweb](https://github.com/mgmediaweb)
 - LinkedIn: [gonzalo-medina-g](https://www.linkedin.com/in/gonzalo-medina-g/)
 - Twitter: [@GonzoMedinaDev](https://twitter.com/GonzoMedinaDev)
+
+👤 **Andres Mauricio Cantillo**
+
+- GitHub: [@@Zeraltz](https://github.com/Zeraltz)
+- Twitter: [@MauroCantillo_](https://twitter.com/MauroCantillo_)
+
+👤 **Tinashe Timothy Murambinda**
+
+- GitHub: [@Draxeytina](https://github.com/Draxeytina/)
+- LinkedIn: [@timothy-tinashe-murambinda-192442232](https://www.linkedin.com/in/timothy-tinashe-murambinda-192442232/)
+- Twitter: [tinamura2](https://twitter.com/tinamura2)
 
 ## 🤝 Contributing
 
