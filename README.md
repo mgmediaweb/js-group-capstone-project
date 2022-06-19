@@ -49,13 +49,13 @@ To view this document on your local computer:
 
 👤 **Andres Mauricio Cantillo**
 
-- GitHub: [@@Zeraltz](https://github.com/Zeraltz)
+- GitHub: [@Zeraltz](https://github.com/Zeraltz)
 - Twitter: [@MauroCantillo_](https://twitter.com/MauroCantillo_)
 
 👤 **Tinashe Timothy Murambinda**
 
 - GitHub: [@Draxeytina](https://github.com/Draxeytina/)
-- LinkedIn: [@timothy-tinashe-murambinda-192442232](https://www.linkedin.com/in/timothy-tinashe-murambinda-192442232/)
+- LinkedIn: [timothy-tinashe-murambinda-192442232](https://www.linkedin.com/in/timothy-tinashe-murambinda-192442232/)
 - Twitter: [tinamura2](https://twitter.com/tinamura2)
 
 ## 🤝 Contributing
