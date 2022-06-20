@@ -5,7 +5,8 @@
 }
 
 body {
-  background-color: #f8f8f8;
+  background-image: #CAAA68 url('../assets/images/background2.jpg') no-repeat;
+  background-size: cover;
   height: 100%;
 }
 
@@ -33,9 +34,14 @@ footer {
   resize: none;
 }
 
+.logo {
+  height: 45px;
+  width: auto;
+}
+
 .messages {
   height: auto;
-  max-height: 300px;
+  max-height: 150px;
   overflow-y: auto;
   width: 100%;
 
@@ -45,7 +51,8 @@ footer {
 }
 
 .modal-img {
-  max-width: 500px;
+  height: auto;
+  max-width: 200px;
   width: 100%;
 }
 
