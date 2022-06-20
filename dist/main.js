@@ -116,7 +116,17 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/style.scss */ \"./src/scss/style.scss\");\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://js-group-capstone-project/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/style.scss */ \"./src/scss/style.scss\");\n/* harmony import */ var _modules_homepageApi_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/homepageApi.js */ \"./src/modules/homepageApi.js\");\n\r\n\r\n\r\n\r\n(0,_modules_homepageApi_js__WEBPACK_IMPORTED_MODULE_1__.getHomepageData)();\r\n\r\n\r\n\n\n//# sourceURL=webpack://js-group-capstone-project/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/homepageApi.js":
+/*!************************************!*\
+  !*** ./src/modules/homepageApi.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"getHomepageData\": () => (/* binding */ getHomepageData)\n/* harmony export */ });\nasync function getHomepageData() {\r\n  const requestURL = 'https://api.opendota.com/api/proPlayers'\r\n  const response = await fetch(requestURL, {\r\n    method: 'GET',\r\n  });\r\n  const data = await response.json();\r\n  console.log(data);\r\n  return data;\r\n}\r\n\n\n//# sourceURL=webpack://js-group-capstone-project/./src/modules/homepageApi.js?");
 
 /***/ })
 
