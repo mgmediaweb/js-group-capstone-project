@@ -71,11 +71,11 @@
         </div>
 
         <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalComments">
     Launch demo modal
   </button>
   
-  <!-- Modal -->
+<!--  
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -93,7 +93,74 @@
       </div>
     </div>
   </div>
-    </div>
+    </div> -->
+
+    <!-- Modal Comments -->
+    <div class="modal fade" id="modalComments" tabindex="-1" aria-labelledby="modalComments" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Comments</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body container">
+            <div class="row">
+              <div class="text-center my-3 col">
+                <img src="https://avatars.akamai.steamstatic.com/b92793127bfa6ceb1edbd2b7b25011b1dc6db89e_full.jpg" class="img-thumbnail modal-img" alt="" />
+              </div>
+              
+              <div id="modalInformation" class="col row g-2">
+                <p class="m-0 p-0">Name: ...</p>
+                <p class="m-0 p-0">Country Code: ...</p>
+                <p class="m-0 p-0">Team Name: ...</p>
+                <p class="m-0 p-0">Player ID: ...</p>
+                <a href="https://steamcommunity.com/id/misterdurst69/" target="blank">Visit Player Profile</a>
+              </div>
+            </div>
+            <h4 id="title-reservation" class="text-center my-3">Comments (3)</h4>
+
+            <div id="msjComments" class="messages">
+              <p><span>06/25/2022 </span>Alex: <span class="fst-italic">this its a comment</span></p>
+              <p><span>06/25/2022 </span>Alex: <span class="fst-italic">this its a comment</span></p>
+              <p><span>06/25/2022 </span>Alex: <span class="fst-italic">this its a comment</span></p>
+              <p><span>06/25/2022 </span>Alex: <span class="fst-italic">this its a comment</span></p>
+              <p><span>06/25/2022 </span>Alex: <span class="fst-italic">this its a comment</span></p>
+              <p><span>06/25/2022 </span>Alex: <span class="fst-italic">this its a comment</span></p>
+              <p><span>06/25/2022 </span>Alex: <span class="fst-italic">this its a comment</span></p>
+              <p><span>06/25/2022 </span>Alex: <span class="fst-italic">this its a comment</span></p>
+              <p><span>06/25/2022 </span>Alex: <span class="fst-italic">this its a comment</span></p>
+              <p><span>06/25/2022 </span>Alex: <span class="fst-italic">this its a comment</span></p>
+              <p><span>06/25/2022 </span>Alex: <span class="fst-italic">this its a comment</span></p>
+              <p><span>06/25/2022 </span>Alex: <span class="fst-italic">this its a comment</span></p>
+              <p><span>06/25/2022 </span>Alex: <span class="fst-italic">this its a comment</span></p>
+              <p><span>06/25/2022 </span>Alex: <span class="fst-italic">this its a comment</span></p>
+              <p><span>06/25/2022 </span>Alex: <span class="fst-italic">this its a comment</span></p>
+              <p><span>06/25/2022 </span>Alex: <span class="fst-italic">this its a comment</span></p>
+              <p><span>06/25/2022 </span>Alex: <span class="fst-italic">this its a comment</span></p>
+              <p><span>06/25/2022 </span>Alex: <span class="fst-italic">this its a comment</span></p>
+              <p><span>06/25/2022 </span>Alex: <span class="fst-italic">this its a comment</span></p>
+              <p><span>06/25/2022 </span>Alex: <span class="fst-italic">this its a comment</span></p>
+            </div>
+
+            <h4 class="text-center my-3">Add a comment</h4>
+
+            <form id="formReservation">
+              <div class="row">
+                <div class="col-12 mb-2">
+                  <input type="text" class="form-control" id="commentName" placeholder="Your name" value="" required>
+                </div>
+                <div class="col-12 mb-2">
+                  <textarea class="form-control comment" id="comment" placeholder="Your insights" required></textarea>
+                </div>
+                <div class="col-12 mt-2 text-end">
+                  <button type="submit" class="btn btn-primary">Comment</button>
+                </div>
+              </div>
+            </form>            
+          </div>
+        </div>
+      </div>
+    </div>    
 
     <footer>
         <div class="container text-center">
