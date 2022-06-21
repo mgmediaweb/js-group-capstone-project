@@ -1,4 +1,5 @@
 import { getHomepageData } from "./homepageApi.js";
+import loadButtons from "./loadButtons.js";
 
 const displayCard = document.querySelectorAll(".display-card-js"); 
 
@@ -51,4 +52,6 @@ export const displayHomepageData = async () => {
   `
 
  };
+
+ loadButtons();
 }
