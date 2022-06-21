@@ -2,14 +2,17 @@ import Config from './config.js';
 
 const boardReservation = document.getElementById('msjReservations');
 
+const showCounter = data => {
+    let dataSize = data.length;
+    if(dataSize == undefined) dataSize = 0;
+    return dataSize;
+}
+
 const showData = data => {
     let content = '';
     boardReservation.innerHTML = '';
-
-    let reservCount = data.length;
-    if(reservCount == undefined) reservCount = 0;
     
-    document.getElementById('title-reservation').innerHTML = `Reservations (${reservCount})`;
+    document.getElementById('title-reservation').innerHTML = `Reservations (${showCounter(data)})`;
   
     if (data.length) {
         data.map((item) => {
