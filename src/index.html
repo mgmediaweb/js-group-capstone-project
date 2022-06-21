@@ -35,6 +35,7 @@
     <div class="container">
 
         <div class="row">
+<!-- LOOP  -->
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card">
                     <div class="card-body">
@@ -72,8 +73,9 @@
                       </button>                      
 
                     </div>
-                  </div>
+                </div>
             </div>
+<!-- LOOP  -->            
             <div class="col-12 col-md-6 col-lg-4">
               <div class="card">
                   <div class="card-body">
@@ -149,7 +151,7 @@
               </div>              
             </div>
 
-            <h4 id="title-reservation" class="text-center my-3">Comments (3)</h4>
+            <h4 id="title-comment" class="text-center my-3">Comments (3)</h4>
 
             <div id="msjComments" class="messages">
               <p>06/25/2022 Alex: <span class="fst-italic">this its a comment</span></p>
@@ -176,7 +178,8 @@
 
             <h4 class="text-center my-3">Add a comment</h4>
 
-            <form id="formReservation" action="#">
+            <form id="formComment">
+              <input id="modalCommentId" type="hidden" value="" />
               <div class="row">
                 <div class="col-12 mb-2">
                   <label for="commentName" class="form-label m-0 p-0">Your name</label>
@@ -218,15 +221,14 @@
               </div>              
             </div>
 
-            <h4 id="title-reservation" class="text-center my-3">Reservations (3)</h4>
+            <h4 id="title-reservation" class="text-center my-3">Reservations (0)</h4>
 
-            <div id="msjReservations" class="messages">
-              <p>20/06/2022 - 25/06/2022 <span class="fw-bold">By Alex</span></p>
-            </div>            
+            <div id="msjReservations" class="messages"></div>
 
             <h4 class="text-center my-3">Add a reservation</h4>
 
             <form id="formReservation">
+              <input id="modalReservId" type="hidden" value="" />
               <div class="row">
                 <div class="col-12 mb-2">
                   <label for="reservationName" class="form-label m-0 p-0">Your name</label>
