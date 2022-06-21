@@ -18,10 +18,19 @@ html {
 }
 
 footer {
-  background-color: rgba(0,0,0,0.075);
+  background-color: rgba(0,0,0,0.15);
   font-size: 0.9rem;
   margin-top: 20px;
   padding: 40px 0;
+
+  a {
+    color: #9B3425;
+
+    &:hover {
+      color: #6e1c0f;
+      text-decoration: none;
+    }
+  }
 
   p {
     margin: 0;
