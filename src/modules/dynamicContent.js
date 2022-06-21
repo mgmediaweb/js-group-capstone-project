@@ -16,7 +16,7 @@ export const displayHomepageData = async () => {
         <h5 class="card-title">${storedData[i].name}</h5>
         <i class="fa fa-heart-o" aria-hidden="true"></i>
       </div>
-      <p class="card-text">This pro player is from ${countryName.of(countryCode)} and his team is ${storedData[i].team_name}. His ID is ${storedData[i].account_id}.</p>
+      <p class="card-text">This pro player is from ${countryName.of(countryCode)} and his team is ${storedData[i].team_name}. His ID is ${storedData[i].account_id}. You can take a look at his profile <a href="${storedData[i].profileurl}">by CLICKING HERE</a></p>
       <div class="d-flex flex-column justify-content-center">
       <button 
       type="button"
@@ -43,7 +43,7 @@ export const displayHomepageData = async () => {
       data-bs-team="${storedData[i].team_name}"
       data-bs-id="${storedData[i].account_id}"
       data-bs-link="${storedData[i].profileurl}"
-      data-bs-image="${storedData[i].avatar}"
+      data-bs-image="${storedData[i].avatarfull}"
   >
     Reservations
   </button>
