@@ -77,8 +77,20 @@
                 >
                   Comments
                 </button>
-
-                <a href="#" class="btn btn-primary">Reservations</a>
+                <button 
+                    type="button"
+                    class="btn btn-primary btn-comment" 
+                    data-bs-toggle="modal" 
+                    data-bs-target="#modalReservation" 
+                    data-bs-name="Juanito"
+                    data-bs-country="CL"
+                    data-bs-team="Winner"
+                    data-bs-id="12345"
+                    data-bs-link="https://steamcommunity.com/id/YrikGood/"
+                    data-bs-image="https://avatars.akamai.steamstatic.com/f1cc901397affdcbf8c4c3d99688241d11fde80d_full.jpg"
+                >
+                  Reservations
+                </button>
               </div>
             </div>
           </div>
@@ -243,7 +255,7 @@
               </div>              
             </div>
 
-            <h4 id="title-comment" class="text-center my-3">Comments (3)</h4>
+            <h4 id="title-comment" class="text-center my-3">Comments (0)</h4>
 
             <div id="msjComments" class="messages"></div>
 
@@ -261,7 +273,7 @@
                   <textarea class="form-control comment" id="comment" required></textarea>
                 </div>
                 <div class="col-12 mt-2 text-end">
-                  <button type="submit" class="btn btn-primary">Comment</button>
+                  <button type="submit" id="btn-addComment" class="btn btn-primary">Comment</button>
                 </div>
               </div>
             </form>            
