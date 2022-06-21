@@ -17,6 +17,7 @@ export const displayHomepageData = async () => {
         <h5 class="card-title">${storedData[i].name}</h5>
         <i class="fa fa-heart-o" aria-hidden="true"></i>
       </div>
+      <small>${numberOfLikes} Likes</small>
       <p class="card-text">This pro player is from ${countryName.of(countryCode)} and his team is ${storedData[i].team_name}. His ID is ${storedData[i].account_id}. You can take a look at his profile <a href="${storedData[i].profileurl}">by CLICKING HERE</a></p>
       <div class="d-flex flex-column justify-content-center">
       <button 
@@ -54,4 +55,8 @@ export const displayHomepageData = async () => {
  };
 
  loadButtons();
+}
+
+const numberOfLikes = () => {
+  
 }

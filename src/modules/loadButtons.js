@@ -1,3 +1,6 @@
+import Reservations from "./reservations.js";
+import Comments from "./comment.js";
+
 const loadButtons = () => {
     const btnComments = document.querySelectorAll('.btn-comment');
     const btnReservations = document.querySelectorAll('.btn-reservation');
@@ -5,7 +8,7 @@ const loadButtons = () => {
     btnComments.forEach(btn => {
         btn.addEventListener('click', () => {
             const idnum = btn.getAttribute('data-bs-id');
-            console.log(idnum);
+            Comments.get(idnum);
             loadModalInfo(idnum,btn);
         })
     });
@@ -18,6 +21,7 @@ const loadButtons = () => {
         })    
     });
 }
+
 
 const loadModalInfo = (id,modal) => {
     /* CLEAR FIELDS */

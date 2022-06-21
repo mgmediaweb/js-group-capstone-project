@@ -30,9 +30,10 @@ const getData = async (item) => {
     const response = await fetch(`${Config.InvolveAPI}apps/${Config.InvolveID}/reservations?item_id=${item}`, {
         method: 'GET',
         headers: {
-        'Content-type': 'application/json; charset=UTF-8',
+            'Content-type': 'application/json; charset=UTF-8',
         },
     });
+    console.log(response);
     const results = await response.json();
     showData(results);
 };
