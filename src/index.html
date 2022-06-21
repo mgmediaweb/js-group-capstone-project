@@ -38,20 +38,81 @@
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
                       <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
-                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalComments">
-                        Comments
+                      <button 
+                          type="button"
+                          class="btn btn-primary btn-comment" 
+                          data-bs-toggle="modal" 
+                          data-bs-target="#modalComments" 
+                          data-bs-name="Juanito"
+                          data-bs-country="CL"
+                          data-bs-team="Winner"
+                          data-bs-id="12345"
+                          data-bs-link="https://steamcommunity.com/id/YrikGood/"
+                          data-bs-image="https://avatars.akamai.steamstatic.com/f1cc901397affdcbf8c4c3d99688241d11fde80d_full.jpg"
+                          >
+                              Comments
+                      </button>
+
+                      <button 
+                          type="button"
+                          class="btn btn-primary btn-reservation" 
+                          data-bs-toggle="modal" 
+                          data-bs-target="#modalReservation" 
+                          data-bs-name="Juanito"
+                          data-bs-country="CL"
+                          data-bs-team="Winner"
+                          data-bs-id="12345"
+                          data-bs-link="https://steamcommunity.com/id/YrikGood/"
+                          data-bs-image="https://avatars.akamai.steamstatic.com/f1cc901397affdcbf8c4c3d99688241d11fde80d_full.jpg"
+                          >
+                          Reservations
                       </button>                      
 
-                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalReservation">
-                        Reservations
-                      </button>
                     </div>
                   </div>
             </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card">
+                  <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                    <button 
+                        type="button"
+                        class="btn btn-primary btn-comment" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#modalComments" 
+                        data-bs-name="Panchito"
+                        data-bs-country="AR"
+                        data-bs-team="Boca"
+                        data-bs-id="668899"
+                        data-bs-link="https://steamcommunity.com/id/misterdurst69/"
+                        data-bs-image="https://avatars.akamai.steamstatic.com/b92793127bfa6ceb1edbd2b7b25011b1dc6db89e_full.jpg"
+                      >
+                            Comments
+                    </button>
+
+                    <button 
+                        type="button"
+                        class="btn btn-primary btn-reservation" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#modalReservation" 
+                        data-bs-name="Panchito"
+                        data-bs-country="AR"
+                        data-bs-team="Boca"
+                        data-bs-id="668899"
+                        data-bs-link="https://steamcommunity.com/id/misterdurst69/"
+                        data-bs-image="https://avatars.akamai.steamstatic.com/b92793127bfa6ceb1edbd2b7b25011b1dc6db89e_full.jpg"
+                      >
+                        Reservations
+                    </button>
+
+                  </div>
+                </div>
+          </div>            
         </div>
         
   
@@ -77,14 +138,14 @@
           <div class="modal-body">
             <div class="row">
               <div class="col-12 col-md-4">
-                <img src="https://avatars.akamai.steamstatic.com/b92793127bfa6ceb1edbd2b7b25011b1dc6db89e_full.jpg" class="img-thumbnail modal-img" alt="" />
+                <img id="modalCommentImage" src="./noimage.png" class="img-thumbnail modal-img" alt="Profile Image" />
               </div>
               <div class="col-12 col-md-8 d-flex flex-column align-items-start justify-content-center">
-                <p class="m-0 p-0">Name: <span class="modalName">...</span></p>
-                <p class="m-0 p-0">Country Code: <span class="modalContry">...</span></p>
-                <p class="m-0 p-0">Team Name: <span class="modalTeam">...</span></p>
-                <p class="m-0 p-0">Player ID: <span class="modalPlayer">...</span></p>
-                <a href="https://steamcommunity.com/id/misterdurst69/" target="blank">Visit Player Profile</a>                
+                <p class="m-0 p-0">Name: <span id="modalCommentName">...</span></p>
+                <p class="m-0 p-0">Country Code: <span id="modalCommentCountry">...</span></p>
+                <p class="m-0 p-0">Team Name: <span id="modalCommentTeam">...</span></p>
+                <p class="m-0 p-0">Player ID: <span id="modalCommentPlayer">...</span></p>
+                <a id="modalCommentLink" href="#" target="blank">Visit Player Profile</a>                
               </div>              
             </div>
 
@@ -115,7 +176,7 @@
 
             <h4 class="text-center my-3">Add a comment</h4>
 
-            <form id="formReservation">
+            <form id="formReservation" action="#">
               <div class="row">
                 <div class="col-12 mb-2">
                   <label for="commentName" class="form-label m-0 p-0">Your name</label>
@@ -146,14 +207,14 @@
           <div class="modal-body">
             <div class="row">
               <div class="col-12 col-md-4">
-                <img src="https://avatars.akamai.steamstatic.com/b92793127bfa6ceb1edbd2b7b25011b1dc6db89e_full.jpg" class="img-thumbnail modal-img" alt="" />
+                <img id="modalReservImage" src="./noimage.png" class="img-thumbnail modal-img" alt="Profile Image" />
               </div>
               <div class="col-12 col-md-8 d-flex flex-column align-items-start justify-content-center">
-                <p class="m-0 p-0">Name: <span class="modalName">...</span></p>
-                <p class="m-0 p-0">Country Code: <span class="modalContry">...</span></p>
-                <p class="m-0 p-0">Team Name: <span class="modalTeam">...</span></p>
-                <p class="m-0 p-0">Player ID: <span class="modalPlayer">...</span></p>
-                <a href="https://steamcommunity.com/id/misterdurst69/" target="blank">Visit Player Profile</a>                
+                <p class="m-0 p-0">Name: <span id="modalReservName">...</span></p>
+                <p class="m-0 p-0">Country Code: <span id="modalReservCountry">...</span></p>
+                <p class="m-0 p-0">Team Name: <span id="modalReservTeam">...</span></p>
+                <p class="m-0 p-0">Player ID: <span id="modalReservPlayer">...</span></p>
+                <a id="modalReservLink" href="https://steamcommunity.com/id/misterdurst69/" target="blank">Visit Player Profile</a>                
               </div>              
             </div>
 
