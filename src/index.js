@@ -2,9 +2,11 @@ import { getHomepageData } from './modules/homepageApi.js';
 import Reservations from './modules/reservations.js';
 import { displayHomepageData } from './modules/dynamicContent.js';
 import Comments from './modules/comment.js';
+import addCounter from './modules/itemCounterHomepage.js';
 import './scss/style.scss';
 
 displayHomepageData();
+addCounter();
 
 const formReservation = document.getElementById('formReservation');
 const formComment = document.getElementById('formComment')
