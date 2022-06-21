@@ -14,18 +14,7 @@ const createGame = async (Storage) => {
   const apiResponse = response;
 
   console.log(apiResponse);
-/*
-  let gameId = apiResponse.result.substr(14);
-  gameId = gameId.substr(0, gameId.length - 7);
-
-  const gameInfo = {
-    name: gameName.charAt(0).toUpperCase() + gameName.slice(1).toLowerCase(),
-    id: gameId,
-  };
-
-  Storage.set(gameInfo);
-  window.location.reload();
-*/  
+ 
 };
 
 export default createGame;

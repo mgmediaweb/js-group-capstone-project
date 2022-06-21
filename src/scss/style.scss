@@ -1,3 +1,4 @@
+$color-black: black;
 $color-white: white;
 $color-background: #CAAA68;
 $color-dota-red: #9B3425;
@@ -48,6 +49,15 @@ footer {
   p {
     margin: 0;
     padding: 0;
+  }
+}
+
+.btn-likes {
+  color: $color-black;
+
+  &:hover {
+    color: $color-dota-red;
+    cursor: pointer;
   }
 }
 

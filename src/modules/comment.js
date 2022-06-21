@@ -33,8 +33,11 @@ const getData = async (item) => {
         'Content-type': 'application/json; charset=UTF-8',
         },
     });
-    const results = await response.json();
-    showData(results);
+
+    if(response.status != 400) {
+        const results = await response.json();
+        showData(results);
+    }    
 };
 
 const addData = async (item, name, comment) => {

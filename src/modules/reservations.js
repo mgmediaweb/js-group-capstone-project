@@ -20,7 +20,7 @@ const showData = data => {
             return true;
         });
     } else {
-      content += '<p class="text-center py-3">No reservation availables</p>';
+      content += '<p class="text-center py-3">No reservations availables</p>';
     }
   
     boardReservation.innerHTML = content;
@@ -33,9 +33,11 @@ const getData = async (item) => {
             'Content-type': 'application/json; charset=UTF-8',
         },
     });
-    console.log(response);
-    const results = await response.json();
-    showData(results);
+
+    if(response.status != 400) {
+        const results = await response.json();
+        showData(results);
+    }
 };
 
 const addData = async (item, name, start, end) => {

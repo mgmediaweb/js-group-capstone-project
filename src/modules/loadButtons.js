@@ -1,9 +1,11 @@
+import { setLikes } from "./likes.js";
 import Reservations from "./reservations.js";
 import Comments from "./comment.js";
 
 const loadButtons = () => {
     const btnComments = document.querySelectorAll('.btn-comment');
     const btnReservations = document.querySelectorAll('.btn-reservation');
+    const btnLikes = document.querySelectorAll('.btn-likes');
 
     btnComments.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -20,6 +22,12 @@ const loadButtons = () => {
             loadModalInfo(idnum,btn);
         })    
     });
+
+    btnLikes.forEach(btn => {
+        btn.addEventListener('click', () => {
+            setLikes(btn.dataset.id);
+        })
+    });    
 }
 
 

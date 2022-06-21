@@ -1,9 +1,8 @@
 import { getHomepageData } from "./homepageApi.js";
 import loadButtons from "./loadButtons.js";
+import { loadLikes } from "./likes.js";
 
 const displayCard = document.querySelectorAll(".display-card-js"); 
-
-
 
 export const displayHomepageData = async () => {
  const storedData = await getHomepageData();
@@ -15,10 +14,10 @@ export const displayHomepageData = async () => {
     <div class="card-body">
       <div class="d-flex justify-content-between">
         <h5 class="card-title">${storedData[i].name}</h5>
-        <i class="fa fa-heart-o" aria-hidden="true"></i>
+        <div data-id="${storedData[i].account_id}" class="btn-likes"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
       </div>
-      <small>${numberOfLikes} Likes</small>
-      <p class="card-text">This pro player is from ${countryName.of(countryCode)} and his team is ${storedData[i].team_name}. His ID is ${storedData[i].account_id}. You can take a look at his profile <a href="${storedData[i].profileurl}">by CLICKING HERE</a></p>
+      <small id="likes${storedData[i].account_id}">0 Likes</small>
+      <p class="card-text">This pro player is from ${countryName.of(countryCode)} and his team is ${storedData[i].team_name}. His ID is ${storedData[i].account_id}. You can take a look at his profile <a href="${storedData[i].profileurl}" target="new">by CLICKING HERE</a></p>
       <div class="d-flex flex-column justify-content-center">
       <button 
       type="button"
@@ -55,8 +54,5 @@ export const displayHomepageData = async () => {
  };
 
  loadButtons();
-}
-
-const numberOfLikes = () => {
-  
+ loadLikes();
 }
