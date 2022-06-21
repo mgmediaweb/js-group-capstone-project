@@ -1,3 +1,4 @@
+import { getHomepageData } from './modules/homepageApi.js';
 import Reservations from './modules/reservations.js';
 import Storage from './modules/localstorage.js';
 import Config from './modules/config.js';
@@ -85,4 +86,5 @@ const loadModalInfo = (id,modal) => {
     document.getElementById("modalReservId").value = id;
 }
 
+getHomepageData();
 loadButtons();

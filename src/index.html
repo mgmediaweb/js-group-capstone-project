@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@400;500;600&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-        rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-        crossorigin="anonymous"
-    />    
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/6940032748.js" crossorigin="anonymous"></script>
     <title>JS Group Capstone Project</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm mb-3">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="./logo.png" alt="Dota 2 Logo" class="logo" /></a>
+            <a class="navbar-brand" href="#"><img src="logo.png" alt="Dota 2 Logo" class="logo" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -30,95 +39,179 @@
                 </ul>
             </div>
         </div>
+      </div>
     </nav>
 
     <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4
+        ">
+          <div class="card mb-3">
+            <img
+              src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+              class="card-img-top"
+              alt="Pro Player Profile Picture"
+            />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title">Card title</h5>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+              </div>
+              <small class="card-text"> 0 Likes</small>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <div class="d-flex flex-column justify-content-center">
+                <button 
+                    type="button"
+                    class="btn btn-primary btn-comment" 
+                    data-bs-toggle="modal" 
+                    data-bs-target="#modalComments" 
+                    data-bs-name="Juanito"
+                    data-bs-country="CL"
+                    data-bs-team="Winner"
+                    data-bs-id="12345"
+                    data-bs-link="https://steamcommunity.com/id/YrikGood/"
+                    data-bs-image="https://avatars.akamai.steamstatic.com/f1cc901397affdcbf8c4c3d99688241d11fde80d_full.jpg"
+                >
+                  Comments
+                </button>
 
-        <div class="row">
-<!-- LOOP START -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <div class="card-body">
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-                      <button 
-                          type="button"
-                          class="btn btn-primary btn-comment" 
-                          data-bs-toggle="modal" 
-                          data-bs-target="#modalComments" 
-                          data-bs-name="Juanito"
-                          data-bs-country="CL"
-                          data-bs-team="Winner"
-                          data-bs-id="12345"
-                          data-bs-link="https://steamcommunity.com/id/YrikGood/"
-                          data-bs-image="https://avatars.akamai.steamstatic.com/f1cc901397affdcbf8c4c3d99688241d11fde80d_full.jpg"
-                      >
-                        Comments
-                      </button>
-
-                      <button 
-                          type="button"
-                          class="btn btn-primary btn-reservation" 
-                          data-bs-toggle="modal" 
-                          data-bs-target="#modalReservation" 
-                          data-bs-name="Juanito"
-                          data-bs-country="CL"
-                          data-bs-team="Winner"
-                          data-bs-id="12345"
-                          data-bs-link="https://steamcommunity.com/id/YrikGood/"
-                          data-bs-image="https://avatars.akamai.steamstatic.com/f1cc901397affdcbf8c4c3d99688241d11fde80d_full.jpg"
-                      >
-                        Reservations
-                      </button>                      
-
-                    </div>
+                <a href="#" class="btn btn-primary">Reservations</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4
+        ">
+          <div class="card mb-3">
+            <img
+              src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+              class="card-img-top"
+              alt="Pro Player Profile Picture"
+            />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title">Card title</h5>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+              </div>
+              <small class="card-text"> 0 Likes</small>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <div class="d-flex flex-column justify-content-center">
+                <a href="#" class="btn btn-primary mb-2">Comments</a>
+                <a href="#" class="btn btn-primary">Reservations</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4
+        ">
+          <div class="card mb-3">
+            <img
+              src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+              class="card-img-top"
+              alt="Pro Player Profile Picture"
+            />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title">Card title</h5>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+              </div>
+              <small class="card-text"> 0 Likes</small>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+                <div class="d-flex flex-column justify-content-center">
+                  <a href="#" class="btn btn-primary mb-2">Comments</a>
+                  <a href="#" class="btn btn-primary">Reservations</a>
                 </div>
             </div>
-<!-- LOOP END -->
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="card">
-                  <div class="card-body">
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-                    <button 
-                        type="button"
-                        class="btn btn-primary btn-comment" 
-                        data-bs-toggle="modal" 
-                        data-bs-target="#modalComments" 
-                        data-bs-name="Panchito"
-                        data-bs-country="AR"
-                        data-bs-team="Boca"
-                        data-bs-id="668899"
-                        data-bs-link="https://steamcommunity.com/id/misterdurst69/"
-                        data-bs-image="https://avatars.akamai.steamstatic.com/b92793127bfa6ceb1edbd2b7b25011b1dc6db89e_full.jpg"
-                      >
-                        Comments
-                    </button>
-
-                    <button 
-                        type="button"
-                        class="btn btn-primary btn-reservation" 
-                        data-bs-toggle="modal" 
-                        data-bs-target="#modalReservation" 
-                        data-bs-name="Panchito"
-                        data-bs-country="AR"
-                        data-bs-team="Boca"
-                        data-bs-id="668899"
-                        data-bs-link="https://steamcommunity.com/id/misterdurst69/"
-                        data-bs-image="https://avatars.akamai.steamstatic.com/b92793127bfa6ceb1edbd2b7b25011b1dc6db89e_full.jpg"
-                      >
-                        Reservations
-                    </button>
-
-                  </div>
-                </div>
-          </div>            
+          </div>
         </div>
-        
+          <div class="col-12 col-md-6 col-lg-4
+          ">
+            <div class="card mb-3">
+              <img
+                src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                class="card-img-top"
+                alt="Pro Player Profile Picture"
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title">Card title</h5>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </div>
+                <small class="card-text"> 0 Likes</small>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="d-flex flex-column justify-content-center">
+                  <a href="#" class="btn btn-primary mb-2">Comments</a>
+                  <a href="#" class="btn btn-primary">Reservations</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4
+          ">
+            <div class="card mb-3">
+              <img
+                src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                class="card-img-top"
+                alt="Pro Player Profile Picture"
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title">Card title</h5>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </div>
+                <small class="card-text"> 0 Likes</small>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="d-flex flex-column justify-content-center">
+                  <a href="#" class="btn btn-primary mb-2">Comments</a>
+                  <a href="#" class="btn btn-primary">Reservations</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4
+          ">
+            <div class="card mb-3">
+              <img
+                src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                class="card-img-top"
+                alt="Pro Player Profile Picture"
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title">Card title</h5>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </div>
+                <small class="card-text"> 0 Likes</small>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="d-flex flex-column justify-content-center">
+                  <a href="#" class="btn btn-primary mb-2">Comments</a>
+                  <a href="#" class="btn btn-primary">Reservations</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <!-- Footer -->
     <footer>
         <div class="container text-center">
             <p>Created by:</p>
