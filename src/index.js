@@ -1,8 +1,9 @@
 import { getHomepageData } from './modules/homepageApi.js';
 import Reservations from './modules/reservations.js';
-import Storage from './modules/localstorage.js';
-import Config from './modules/config.js';
+import { displayHomepageData } from './modules/dynamicContent.js';
 import './scss/style.scss';
+
+displayHomepageData();
 
 const formReservation = document.getElementById('formReservation');
 const modalComments = document.getElementById('modalComments');
