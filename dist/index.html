@@ -15,7 +15,7 @@
     />    
     <title>JS Group Capstone Project</title>
 <script defer src="main.js"></script></head>
-<body>
+<body onload="loadButtons();">
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-3">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="logo.png" alt="Dota 2 Logo" class="logo" /></a>
@@ -35,6 +35,7 @@
     <div class="container">
 
         <div class="row">
+<!-- LOOP START -->
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card">
                     <div class="card-body">
@@ -42,20 +43,39 @@
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
                       <button 
-                        type="button"
-                        class="btn btn-primary" 
-                        data-bs-toggle="modal" 
-                        data-bs-target="#modalComments" 
-                        data-bs-name="panchito">
+                          type="button"
+                          class="btn btn-primary btn-comment" 
+                          data-bs-toggle="modal" 
+                          data-bs-target="#modalComments" 
+                          data-bs-name="Juanito"
+                          data-bs-country="CL"
+                          data-bs-team="Winner"
+                          data-bs-id="12345"
+                          data-bs-link="https://steamcommunity.com/id/YrikGood/"
+                          data-bs-image="https://avatars.akamai.steamstatic.com/f1cc901397affdcbf8c4c3d99688241d11fde80d_full.jpg"
+                      >
                         Comments
                       </button>
 
-                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalReservation">
+                      <button 
+                          type="button"
+                          class="btn btn-primary btn-reservation" 
+                          data-bs-toggle="modal" 
+                          data-bs-target="#modalReservation" 
+                          data-bs-name="Juanito"
+                          data-bs-country="CL"
+                          data-bs-team="Winner"
+                          data-bs-id="12345"
+                          data-bs-link="https://steamcommunity.com/id/YrikGood/"
+                          data-bs-image="https://avatars.akamai.steamstatic.com/f1cc901397affdcbf8c4c3d99688241d11fde80d_full.jpg"
+                      >
                         Reservations
-                      </button>
+                      </button>                      
+
                     </div>
-                  </div>
+                </div>
             </div>
+<!-- LOOP END -->
             <div class="col-12 col-md-6 col-lg-4">
               <div class="card">
                   <div class="card-body">
@@ -63,23 +83,40 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
                     <button 
-                      type="button"
-                      class="btn btn-primary" 
-                      data-bs-toggle="modal" 
-                      data-bs-target="#modalComments" 
-                      data-bs-name="Juanito">
-                      Comments
+                        type="button"
+                        class="btn btn-primary btn-comment" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#modalComments" 
+                        data-bs-name="Panchito"
+                        data-bs-country="AR"
+                        data-bs-team="Boca"
+                        data-bs-id="668899"
+                        data-bs-link="https://steamcommunity.com/id/misterdurst69/"
+                        data-bs-image="https://avatars.akamai.steamstatic.com/b92793127bfa6ceb1edbd2b7b25011b1dc6db89e_full.jpg"
+                      >
+                            Comments
                     </button>
 
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalReservation">
-                      Reservations
+                    <button 
+                        type="button"
+                        class="btn btn-primary btn-reservation" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#modalReservation" 
+                        data-bs-name="Panchito"
+                        data-bs-country="AR"
+                        data-bs-team="Boca"
+                        data-bs-id="668899"
+                        data-bs-link="https://steamcommunity.com/id/misterdurst69/"
+                        data-bs-image="https://avatars.akamai.steamstatic.com/b92793127bfa6ceb1edbd2b7b25011b1dc6db89e_full.jpg"
+                      >
+                        Reservations
                     </button>
+
                   </div>
                 </div>
           </div>            
         </div>
         
-  
     </div>
 
     <footer>
@@ -102,45 +139,25 @@
           <div class="modal-body">
             <div class="row">
               <div class="col-12 col-md-4">
-                <img src="https://avatars.akamai.steamstatic.com/b92793127bfa6ceb1edbd2b7b25011b1dc6db89e_full.jpg" class="img-thumbnail modal-img" alt="" />
+                <img id="modalCommentImage" src="./noimage.png" class="img-thumbnail modal-img" alt="Profile Image" />
               </div>
               <div class="col-12 col-md-8 d-flex flex-column align-items-start justify-content-center">
-                <p class="m-0 p-0">Name: <span class="modalName">...</span></p>
-                <p class="m-0 p-0">Country Code: <span class="modalContry">...</span></p>
-                <p class="m-0 p-0">Team Name: <span class="modalTeam">...</span></p>
-                <p class="m-0 p-0">Player ID: <span class="modalPlayer">...</span></p>
-                <a href="https://steamcommunity.com/id/misterdurst69/" target="blank">Visit Player Profile</a>                
+                <p class="m-0 p-0">Name: <span id="modalCommentName">...</span></p>
+                <p class="m-0 p-0">Country Code: <span id="modalCommentCountry">...</span></p>
+                <p class="m-0 p-0">Team Name: <span id="modalCommentTeam">...</span></p>
+                <p class="m-0 p-0">Player ID: <span id="modalCommentPlayer">...</span></p>
+                <a id="modalCommentLink" href="#" target="blank">Visit Player Profile</a>                
               </div>              
             </div>
 
-            <h4 id="title-reservation" class="text-center my-3">Comments (3)</h4>
+            <h4 id="title-comment" class="text-center my-3">Comments (3)</h4>
 
-            <div id="msjComments" class="messages">
-              <p>06/25/2022 Alex: <span class="fst-italic">this its a comment</span></p>
-              <p>06/25/2022 Alex: <span class="fst-italic">this its a comment</span></p>
-              <p>06/25/2022 Alex: <span class="fst-italic">this its a comment</span></p>
-              <p>06/25/2022 Alex: <span class="fst-italic">this its a comment</span></p>
-              <p>06/25/2022 Alex: <span class="fst-italic">this its a comment</span></p>
-              <p>06/25/2022 Alex: <span class="fst-italic">this its a comment</span></p>
-              <p>06/25/2022 Alex: <span class="fst-italic">this its a comment</span></p>
-              <p>06/25/2022 Alex: <span class="fst-italic">this its a comment</span></p>
-              <p>06/25/2022 Alex: <span class="fst-italic">this its a comment</span></p>
-              <p>06/25/2022 Alex: <span class="fst-italic">this its a comment</span></p>
-              <p>06/25/2022 Alex: <span class="fst-italic">this its a comment</span></p>
-              <p>06/25/2022 Alex: <span class="fst-italic">this its a comment</span></p>
-              <p>06/25/2022 Alex: <span class="fst-italic">this its a comment</span></p>
-              <p>06/25/2022 Alex: <span class="fst-italic">this its a comment</span></p>
-              <p>06/25/2022 Alex: <span class="fst-italic">this its a comment</span></p>
-              <p>06/25/2022 Alex: <span class="fst-italic">this its a comment</span></p>
-              <p>06/25/2022 Alex: <span class="fst-italic">this its a comment</span></p>
-              <p>06/25/2022 Alex: <span class="fst-italic">this its a comment</span></p>
-              <p>06/25/2022 Alex: <span class="fst-italic">this its a comment</span></p>
-              <p>06/25/2022 Alex: <span class="fst-italic">this its a comment</span></p>
-            </div>
+            <div id="msjComments" class="messages"></div>
 
             <h4 class="text-center my-3">Add a comment</h4>
 
-            <form id="formReservation" action="#">
+            <form id="formComment">
+              <input id="modalCommentId" type="hidden" value="" />
               <div class="row">
                 <div class="col-12 mb-2">
                   <label for="commentName" class="form-label m-0 p-0">Your name</label>
@@ -171,26 +188,25 @@
           <div class="modal-body">
             <div class="row">
               <div class="col-12 col-md-4">
-                <img src="https://avatars.akamai.steamstatic.com/b92793127bfa6ceb1edbd2b7b25011b1dc6db89e_full.jpg" class="img-thumbnail modal-img" alt="" />
+                <img id="modalReservImage" src="./noimage.png" class="img-thumbnail modal-img" alt="Profile Image" />
               </div>
               <div class="col-12 col-md-8 d-flex flex-column align-items-start justify-content-center">
-                <p class="m-0 p-0">Name: <span class="modalName">...</span></p>
-                <p class="m-0 p-0">Country Code: <span class="modalContry">...</span></p>
-                <p class="m-0 p-0">Team Name: <span class="modalTeam">...</span></p>
-                <p class="m-0 p-0">Player ID: <span class="modalPlayer">...</span></p>
-                <a href="https://steamcommunity.com/id/misterdurst69/" target="blank">Visit Player Profile</a>                
+                <p class="m-0 p-0">Name: <span id="modalReservName">...</span></p>
+                <p class="m-0 p-0">Country Code: <span id="modalReservCountry">...</span></p>
+                <p class="m-0 p-0">Team Name: <span id="modalReservTeam">...</span></p>
+                <p class="m-0 p-0">Player ID: <span id="modalReservPlayer">...</span></p>
+                <a id="modalReservLink" href="https://steamcommunity.com/id/misterdurst69/" target="blank">Visit Player Profile</a>                
               </div>              
             </div>
 
-            <h4 id="title-reservation" class="text-center my-3">Reservations (3)</h4>
+            <h4 id="title-reservation" class="text-center my-3">Reservations (0)</h4>
 
-            <div id="msjReservations" class="messages">
-              <p>20/06/2022 - 25/06/2022 <span class="fw-bold">By Alex</span></p>
-            </div>            
+            <div id="msjReservations" class="messages"></div>
 
             <h4 class="text-center my-3">Add a reservation</h4>
 
             <form id="formReservation">
+              <input id="modalReservId" type="hidden" value="" />
               <div class="row">
                 <div class="col-12 mb-2">
                   <label for="reservationName" class="form-label m-0 p-0">Your name</label>

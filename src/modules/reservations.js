@@ -24,7 +24,6 @@ const showData = data => {
 };
 
 const getData = async (item) => {
-    //console.log(`${Config.InvolveAPI}apps/${Config.InvolveID}/reservations?item_id=${item}`);
     const response = await fetch(`${Config.InvolveAPI}apps/${Config.InvolveID}/reservations?item_id=${item}`, {
         method: 'GET',
         headers: {
@@ -32,7 +31,6 @@ const getData = async (item) => {
         },
     });
     const results = await response.json();
-    //console.log(results);
     showData(results);
 };
 
@@ -52,8 +50,6 @@ const addData = async (item, name, start, end) => {
         'Content-type': 'application/json; charset=UTF-8',
         },
     });
-    const results = await response.json();
-    console.log("@@@ ", results);
     getData(item);
 };
 

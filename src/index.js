@@ -1,31 +1,30 @@
 import Reservations from './modules/reservations.js';
 import Storage from './modules/localstorage.js';
-//import createGame from './modules/create.js';
 import Config from './modules/config.js';
 import './scss/style.scss';
 
 const formReservation = document.getElementById('formReservation');
-
-const btnComments = document.querySelectorAll('.btn-comment');
-const btnReservations = document.querySelectorAll('.btn-reservation');
 const modalComments = document.getElementById('modalComments');
 
+const loadButtons = () => {
+    const btnComments = document.querySelectorAll('.btn-comment');
+    const btnReservations = document.querySelectorAll('.btn-reservation');
 
-btnComments.forEach(btn => {
-    btn.addEventListener('click', () => {
-        const id = modal.getAttribute('data-bs-id');
-        loadModalInfo(btn);
-    })
-});
+    btnComments.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const idnum = btn.getAttribute('data-bs-id');
+            loadModalInfo(idnum,btn);
+        })
+    });
 
-btnReservations.forEach(btn => {
-    btn.addEventListener('click', () => {
-        const idnum = btn.getAttribute('data-bs-id');
-        loadModalInfo(btn);
-
-        Reservations.get(idnum);
-    })    
-});
+    btnReservations.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const idnum = btn.getAttribute('data-bs-id');
+            Reservations.get(idnum);
+            loadModalInfo(idnum,btn);
+        })    
+    });
+}
 
 
 formReservation.addEventListener('submit', (event) => {
@@ -44,8 +43,25 @@ formReservation.addEventListener('submit', (event) => {
     end.value = '';
 });
 
-const loadModalInfo = modal => {
-    const id = modal.getAttribute('data-bs-id');
+const loadModalInfo = (id,modal) => {
+    /* CLEAR FIELDS */
+    document.getElementById("modalCommentName").innerHTML = '...'; 
+    document.getElementById("modalCommentCountry").innerHTML = '...'; 
+    document.getElementById("modalCommentTeam").innerHTML = '...'; 
+    document.getElementById("modalCommentPlayer").innerHTML = '...'; 
+    document.getElementById("modalCommentLink").href = '#'; 
+    document.getElementById("modalCommentImage").src = './noimage.png';
+    document.getElementById("modalCommentId").value = '';
+
+    document.getElementById("modalReservName").innerHTML = '...';
+    document.getElementById("modalReservCountry").innerHTML = '...'; 
+    document.getElementById("modalReservTeam").innerHTML = '...';
+    document.getElementById("modalReservPlayer").innerHTML = '...';
+    document.getElementById("modalReservLink").href = '#'; 
+    document.getElementById("modalReservImage").src = './noimage.png';
+    document.getElementById("modalReservId").value = '';
+    /* CLEAR FIELDS */
+
     const name = modal.getAttribute('data-bs-name');
     const country = modal.getAttribute('data-bs-country');
     const team = modal.getAttribute('data-bs-team');
@@ -69,4 +85,4 @@ const loadModalInfo = modal => {
     document.getElementById("modalReservId").value = id;
 }
 
-//createGame(Storage);
+loadButtons();
