@@ -1,7 +1,23 @@
+$color-white: white;
+$color-background: #CAAA68;
+$color-dota-red: #9B3425;
+$color-footer: #52160d;
+$color-link: #9B3425;
+$color-link-hover: #6e1c0f;
+$color-link-footer: #ecdec0;
+$color-link-footer-hover: #fffbf1;
 
+$padding: 10px;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  background-color: #f8f8f8;
+  background: $color-background url('../assets/background.jpg') no-repeat center center;
+  background-size: cover;
   height: 100%;
 }
 
@@ -13,10 +29,20 @@ html {
 }
 
 footer {
-  background-color: rgba(0,0,0,0.075);
+  background-color: rgba($color-footer,0.5);
+  color: $color-white;
   font-size: 0.9rem;
-  margin-top: 20px;
-  padding: 40px 0;
+  margin-top: $padding*2;
+  padding: $padding*4 0;
+
+  a {
+    color: $color-link-footer;
+
+    &:hover {
+      color: $color-link-footer-hover;
+      text-decoration: none;
+    }
+  }
 
   p {
     margin: 0;
@@ -24,10 +50,35 @@ footer {
   }
 }
 
+.comment {
+  height: 75px;
+  resize: none;
+}
+
+.logo {
+  height: 45px;
+  width: auto;
+}
+
+.messages {
+  height: auto;
+  max-height: 150px;
+  overflow-y: auto;
+  width: 100%;
+
+  p {
+    margin: calc($padding/2) 0;
+  }
+}
+
+.modal-img {
+  height: auto;
+  max-width: 200px;
+  width: 100%;
+}
+
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX DESKTOP VERSION XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 @media screen and (min-width: 768px) {
