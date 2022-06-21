@@ -17,6 +17,7 @@ $padding: 10px;
 
 body {
   background: $color-background url('../assets/background.jpg') no-repeat center center;
+  background-attachment: fixed;
   background-size: cover;
   height: 100%;
 }
