@@ -21,7 +21,6 @@ formReservation.addEventListener('submit', (event) => {
 
   Reservations.add(id.value, name.value, start.value, end.value);
 
-  id.value = '';
   name.value = '';
   start.value = '';
   end.value = '';
@@ -36,7 +35,6 @@ formComment.addEventListener('submit', (event) => {
 
   Comments.add(id.value, name.value, comment.value);
 
-  id.value = '';
   name.value = '';
   comment.value = '';
 });
