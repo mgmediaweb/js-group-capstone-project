@@ -9,7 +9,12 @@ class Counter {
    return dataSize;
  }
 
-  addCounter = (currentPlayersShown) => currentPlayersShown.length;
+  addCounter = (currentPlayersShown) => {
+    if (currentPlayersShown.length) {
+      return currentPlayersShown.length;
+    }
+    return null;
+  };
 }
 
 module.exports = Counter;

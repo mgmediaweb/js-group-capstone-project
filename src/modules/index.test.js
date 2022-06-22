@@ -32,8 +32,11 @@ describe('Show counter for counter +1 for comments/reservations', () => {
   });
 });
 
-describe('Test counter for items', () => {
-  test('Item counter', () => {
+describe('Test counter for homepage items', () => {
+  test('Item counter for true data', () => {
     expect(counter.addCounter(dataA)).toBe(2);
+  });
+  test('Item counter for empty data', () => {
+    expect(counter.addCounter(nullData)).toBe(null);
   });
 });
