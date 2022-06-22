@@ -32,6 +32,6 @@ export const setLikes = async item => {
         },
     });
 
-    setTimeout(loadLikes(), 1000);
+    setTimeout(loadLikes(), 500);
     
 }
