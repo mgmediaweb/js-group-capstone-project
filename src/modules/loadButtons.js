@@ -4,6 +4,8 @@ import Comments from './comment.js';
 
 const loadModalInfo = (id, modal) => {
   /* CLEAR FIELDS */
+  document.getElementById('title-comment').innerHTML = 'Comments (0)';
+  document.getElementById('msjComments').innerHTML = '<p class="text-center py-3">No comments available</p>';
   document.getElementById('modalCommentName').innerHTML = '...';
   document.getElementById('modalCommentCountry').innerHTML = '...';
   document.getElementById('modalCommentTeam').innerHTML = '...';
@@ -12,6 +14,8 @@ const loadModalInfo = (id, modal) => {
   document.getElementById('modalCommentImage').src = './noimage.png';
   document.getElementById('modalCommentId').value = '';
 
+  document.getElementById('title-reservation').innerHTML = 'Reservations (0)';
+  document.getElementById('msjReservations').innerHTML = '<p class="text-center py-3">No reservations available</p>';
   document.getElementById('modalReservName').innerHTML = '...';
   document.getElementById('modalReservCountry').innerHTML = '...';
   document.getElementById('modalReservTeam').innerHTML = '...';
@@ -27,6 +31,7 @@ const loadModalInfo = (id, modal) => {
   const link = modal.getAttribute('data-bs-link');
   const image = modal.getAttribute('data-bs-image');
 
+  //document.getElementById('modalCommentId').value = id;
   document.getElementById('modalCommentName').innerHTML = name;
   document.getElementById('modalCommentCountry').innerHTML = country;
   document.getElementById('modalCommentTeam').innerHTML = team;
@@ -35,6 +40,7 @@ const loadModalInfo = (id, modal) => {
   document.getElementById('modalCommentImage').src = image;
   document.getElementById('modalCommentId').value = id;
 
+  //document.getElementById('modalReservId').value = id;
   document.getElementById('modalReservName').innerHTML = name;
   document.getElementById('modalReservCountry').innerHTML = country;
   document.getElementById('modalReservTeam').innerHTML = team;
