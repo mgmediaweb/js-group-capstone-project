@@ -2,8 +2,9 @@
 
 # JS Group Capstone Project
 
-> information comming soon
+In this project we're going to create a SPA that allows the user to see the Pro Players of the Videogame DOTA 2, their information, such as their ID, username, profile, avatar, etc.
 
+For this we are using the [OpenDota API](https://docs.opendota.com/), getting the /proPlayers elements and using them in our UI.
 
 ## Built With
 
@@ -17,20 +18,13 @@
 
 [Live Demo Link](https://mgmediaweb.github.io/js-group-capstone-project/dist/)
 
-### Prerequisites
-
-### Setup
-
 ### Install
 
 To view this document on your local computer:
+
 - Clone this repository.
 - Install dependencies (npm install).
 - Run Webpack Bundle (npm run start).
-
-### Usage
-
-
 
 ### Run tests
 
@@ -50,7 +44,7 @@ To view this document on your local computer:
 👤 **Andres Mauricio Cantillo**
 
 - GitHub: [@Zeraltz](https://github.com/Zeraltz)
-- Twitter: [@MauroCantillo_](https://twitter.com/MauroCantillo_)
+- Twitter: [@MauroCantillo\_](https://twitter.com/MauroCantillo_)
 
 👤 **Tinashe Timothy Murambinda**
 
