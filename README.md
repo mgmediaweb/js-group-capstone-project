@@ -44,6 +44,7 @@ To view this document on your local computer:
 👤 **Andres Mauricio Cantillo**
 
 - GitHub: [@Zeraltz](https://github.com/Zeraltz)
+- LinkedIn [Mauricio-Cantillo](https://www.linkedin.com/in/mauricio-cantillo-moreno-374576184/)
 - Twitter: [@MauroCantillo\_](https://twitter.com/MauroCantillo_)
 
 👤 **Tinashe Timothy Murambinda**
