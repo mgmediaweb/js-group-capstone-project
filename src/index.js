@@ -9,22 +9,22 @@ displayHomepageData();
 addCounter();
 
 const formReservation = document.getElementById('formReservation');
-const formComment = document.getElementById('formComment')
+const formComment = document.getElementById('formComment');
 
 formReservation.addEventListener('submit', (event) => {
-    event.preventDefault();
+  event.preventDefault();
 
-    const id = document.getElementById('modalReservId');
-    const name = document.getElementById('reservationName');
-    const start = document.getElementById('reservationStart');
-    const end = document.getElementById('reservationEnd');
+  const id = document.getElementById('modalReservId');
+  const name = document.getElementById('reservationName');
+  const start = document.getElementById('reservationStart');
+  const end = document.getElementById('reservationEnd');
 
-    Reservations.add(id.value, name.value, start.value, end.value);
+  Reservations.add(id.value, name.value, start.value, end.value);
 
-    id.value = '';
-    name.value = '';
-    start.value = '';
-    end.value = '';
+  id.value = '';
+  name.value = '';
+  start.value = '';
+  end.value = '';
 });
 
 formComment.addEventListener('submit', (event) => {

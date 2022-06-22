@@ -1,15 +1,16 @@
-import { getHomepageData } from "./homepageApi.js";
-import loadButtons from "./loadButtons.js";
-import { loadLikes } from "./likes.js";
+/* eslint-disable */
+import { getHomepageData } from './homepageApi.js';
+import loadButtons from './loadButtons.js';
+import { loadLikes } from './likes.js';
 
-const displayCard = document.querySelectorAll(".display-card-js"); 
+const displayCard = document.querySelectorAll('.display-card-js');
 
 export const displayHomepageData = async () => {
- const storedData = await getHomepageData();
- for (let i = 0; i < displayCard.length; i++) {
-  const countryCode = storedData[i].country_code.toUpperCase();
-  const countryName = new Intl.DisplayNames(['en-US'], {type: 'region'});
-  displayCard[i].innerHTML = `
+  const storedData = await getHomepageData();
+  for (let i = 0; i < displayCard.length; i++) {
+    const countryCode = storedData[i].country_code.toUpperCase();
+    const countryName = new Intl.DisplayNames(['en-US'], { type: 'region' });
+    displayCard[i].innerHTML = `
     <img class="card-img-top" src="${storedData[i].avatarfull}" alt="Card image cap">
     <div class="card-body">
       <div class="d-flex justify-content-between">
@@ -49,10 +50,9 @@ export const displayHomepageData = async () => {
     Reservations
   </button>
       </div>
-  `
+  `;
+  }
 
- };
-
- loadButtons();
- loadLikes();
-}
+  loadButtons();
+  loadLikes();
+};
