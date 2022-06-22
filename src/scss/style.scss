@@ -1,0 +1,120 @@
+$color-black: black;
+$color-white: white;
+$color-background: #caaa68;
+$color-dota-red: #9b3425;
+$color-footer: #52160d;
+$color-link: #9b3425;
+$color-link-hover: #6e1c0f;
+$color-link-footer: #ecdec0;
+$color-link-footer-hover: #fffbf1;
+
+$padding: 10px;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $color-link;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: darken($color-link, 15%);
+    text-decoration: none;
+  }
+}
+
+body {
+  background: $color-background url('../assets/background.jpg') no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+html {
+  font-family: 'Anek Latin', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  height: 100%;
+}
+
+footer {
+  background-color: rgba($color-footer, 0.5);
+  color: $color-white;
+  font-size: 0.9rem;
+  margin-top: $padding*2;
+  padding: $padding*4 0;
+  width: 100%;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.btn-likes {
+  color: $color-black;
+
+  &:hover {
+    color: $color-dota-red;
+    cursor: pointer;
+  }
+}
+
+.btn-primary {
+  border-color: $color-link;
+  background-color: $color-link;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: darken($color-link, 15%);
+    background-color: darken($color-link, 15%);
+    box-shadow: 0 0 0 0.25rem transparentize($color-link, 0.66);
+  }
+}
+
+.comment {
+  height: 75px;
+  resize: none;
+}
+
+.link-footer {
+  color: $color-link-footer;
+
+  &:hover {
+    color: $color-link-footer-hover;
+    text-decoration: none;
+  }
+}
+
+.logo {
+  height: 45px;
+  width: auto;
+}
+
+.messages {
+  height: auto;
+  max-height: 150px;
+  overflow-y: auto;
+  width: 100%;
+
+  p {
+    margin: calc($padding/2) 0;
+  }
+}
+
+.modal-img {
+  height: auto;
+  max-width: 200px;
+  width: 100%;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX DESKTOP VERSION XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */

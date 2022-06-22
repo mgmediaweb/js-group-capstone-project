@@ -1,0 +1,7 @@
+{"collectCoverageFrom": [
+  "**/src/modules/create.js",
+  "**/src/modules/dynamicContent.js",
+  "**/src/modules/homepageAPI.js",
+  "**/src/modules/loadButtons.js"
+]
+}

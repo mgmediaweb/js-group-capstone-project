@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+  />
+  <script src="https://kit.fontawesome.com/6940032748.js" crossorigin="anonymous"></script>
+  <title>JS Group Capstone Project</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm mb-3">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="logo.png" alt="Dota 2 Logo" class="logo" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li id="navbar-item" class="nav-item"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card mb-3 display-card-js"></div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card mb-3 display-card-js"></div> 
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card mb-3 display-card-js"></div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card mb-3 display-card-js"></div> 
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card mb-3 display-card-js"></div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card mb-3 display-card-js"></div> 
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+      <div class="container text-center">
+          <p>Created by:</p>
+          <p>
+              <a href="https://github.com/mgmediaweb" target="new" class="link-footer">Gonzalo Medina</a>, <a href="https://github.com/Zeraltz" target="new" class="link-footer">Andres Cantillo</a> and <a href="https://github.com/Draxeytina/" target="new" class="link-footer">Tinashe Murambinda</a>
+          </p>
+      </div>
+  </footer>
+
+  <!-- Modal Comments -->
+  <div class="modal fade" id="modalComments" tabindex="-1" aria-labelledby="modalComments" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Comments</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-5 col-md-4">
+              <img id="modalCommentImage" src="./noimage.png" class="img-thumbnail modal-img" alt="Profile Image" />
+            </div>
+            <div class="col-7 col-md-8 d-flex flex-column align-items-start justify-content-center">
+              <p class="m-0 p-0">Name: <span id="modalCommentName">...</span></p>
+              <p class="m-0 p-0">Country Code: <span id="modalCommentCountry">...</span></p>
+              <p class="m-0 p-0">Team Name: <span id="modalCommentTeam">...</span></p>
+              <p class="m-0 p-0">Player ID: <span id="modalCommentPlayer">...</span></p>
+              <a id="modalCommentLink" href="#" target="blank">Visit Player Profile</a>                
+            </div>              
+          </div>
+
+          <h4 id="title-comment" class="text-center my-3">Comments (0)</h4>
+
+          <div id="msjComments" class="messages">
+            <p class="text-center py-3">No comments available</p>
+          </div>
+
+          <h4 class="text-center my-3">Add a comment</h4>
+
+          <form id="formComment">
+            <input id="modalCommentId" type="hidden" value="" />
+            <div class="row">
+              <div class="col-12 mb-2">
+                <label for="commentName" class="form-label m-0 p-0">Your name</label>
+                <input type="text" class="form-control" id="commentName" placeholder="John Doe" value="" autocomplete="off" required>
+              </div>
+              <div class="col-12 mb-2">
+                <label for="comment" class="form-label m-0 p-0">Your Insights</label>
+                <textarea class="form-control comment" id="comment" required></textarea>
+              </div>
+              <div class="col-12 mt-2 text-end">
+                <button type="submit" class="btn btn-primary">Comment</button>
+              </div>
+            </div>
+          </form>            
+        </div>
+      </div>
+    </div>
+  </div>    
+
+  <!-- Modal Reservations -->
+  <div class="modal fade" id="modalReservation" tabindex="-1" aria-labelledby="modalReservation" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Reservations</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-5 col-md-4">
+              <img id="modalReservImage" src="./noimage.png" class="img-thumbnail modal-img" alt="Profile Image" />
+            </div>
+            <div class="col-7 col-md-8 d-flex flex-column align-items-start justify-content-center">
+              <p class="m-0 p-0">Name: <span id="modalReservName">...</span></p>
+              <p class="m-0 p-0">Country Code: <span id="modalReservCountry">...</span></p>
+              <p class="m-0 p-0">Team Name: <span id="modalReservTeam">...</span></p>
+              <p class="m-0 p-0">Player ID: <span id="modalReservPlayer">...</span></p>
+              <a id="modalReservLink" href="https://steamcommunity.com/id/misterdurst69/" target="blank">Visit Player Profile</a>                
+            </div>              
+          </div>
+
+          <h4 id="title-reservation" class="text-center my-3">Reservations (0)</h4>
+
+          <div id="msjReservations" class="messages">
+            <p class="text-center py-3">No reservations available</p>
+          </div>
+
+          <h4 class="text-center my-3">Add a reservation</h4>
+
+          <form id="formReservation">
+            <input id="modalReservId" type="hidden" value="" />
+            <div class="row">
+              <div class="col-12 mb-2">
+                <label for="reservationName" class="form-label m-0 p-0">Your name</label>
+                <input type="text" class="form-control" id="reservationName" placeholder="John Doe" value="" autocomplete="off" required>
+              </div>
+              <div class="col-12 col-md-6 mb-2">
+                <label for="reservationStart" class="form-label m-0 p-0">Start Date</label>
+                <input id="reservationStart" type="date" class="form-control" placeholder="DD/MM/AAAA" aria-label="Reservation Start" aria-describedby="reservationStart" value="" autocomplete="off" required>
+              </div>
+              <div class="col-12 col-md-6 mb-2">
+                <label for="reservationEnd" class="form-label m-0 p-0">End Date</label>
+                <input id="reservationEnd" type="date" class="form-control" placeholder="DD/MM/AAAA" aria-label="Reservation End" aria-describedby="reservationEnd" value="" autocomplete="off" required>
+              </div>
+              <div class="col-12 mt-2 text-end">
+                <button type="submit" class="btn btn-primary">Reserve</button>
+              </div>
+            </div>
+          </form>            
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

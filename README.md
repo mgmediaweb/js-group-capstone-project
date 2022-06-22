@@ -1,56 +1,61 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# JS Group Capstone Project
 
-> Description the project.
+In this project we're going to create a SPA that allows the user to see the Pro Players of the Videogame DOTA 2, their information, such as their ID, username, profile, avatar, etc.
 
+For this we are using the [OpenDota API](https://docs.opendota.com/), getting the /proPlayers elements and using them in our UI.
+
+## Team Video
+
+https://user-images.githubusercontent.com/96924302/175106342-639b7cc1-ef04-425c-b84c-b784440f5cd5.mp4
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML5
+- CSS3
+- JAVASCRIPT ES6
+- API REST
+- WEBPACK
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
+[Live Demo Link](https://mgmediaweb.github.io/js-group-capstone-project/dist/)
 
 ### Install
 
-### Usage
+To view this document on your local computer:
+
+- Clone this repository.
+- Install dependencies (npm install).
+- Run Webpack Bundle (npm run start).
 
 ### Run tests
 
-### Deployment
-
-
+- Lintern
+- Eslint
+- Webhint
+- node_modules checker
 
 ## Authors
 
-👤 **Author1**
+👤 **Gonzalo A. Medina**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@mgmediaweb](https://github.com/mgmediaweb)
+- LinkedIn: [gonzalo-medina-g](https://www.linkedin.com/in/gonzalo-medina-g/)
+- Twitter: [@GonzoMedinaDev](https://twitter.com/GonzoMedinaDev)
 
-👤 **Author2**
+👤 **Andres Mauricio Cantillo**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Zeraltz](https://github.com/Zeraltz)
+- LinkedIn [Mauricio-Cantillo](https://www.linkedin.com/in/mauricio-cantillo-moreno-374576184/)
+- Twitter: [@MauroCantillo\_](https://twitter.com/MauroCantillo_)
+
+👤 **Tinashe Timothy Murambinda**
+
+- GitHub: [@Draxeytina](https://github.com/Draxeytina/)
+- LinkedIn: [timothy-tinashe-murambinda-192442232](https://www.linkedin.com/in/timothy-tinashe-murambinda-192442232/)
+- Twitter: [tinamura2](https://twitter.com/tinamura2)
 
 ## 🤝 Contributing
 
