@@ -9,7 +9,7 @@ displayHomepageData();
 addCounter();
 
 const formReservation = document.getElementById('formReservation');
-const formComment = document.getElementById('formComment')
+const formComment = document.getElementById('formComment');
 
 formReservation.addEventListener('submit', (event) => {
     event.preventDefault();
