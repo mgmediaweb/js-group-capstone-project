@@ -6,6 +6,8 @@ In this project we're going to create a SPA that allows the user to see the Pro 
 
 For this we are using the [OpenDota API](https://docs.opendota.com/), getting the /proPlayers elements and using them in our UI.
 
+## Team Video
+
 ## Built With
 
 - HTML5
