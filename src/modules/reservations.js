@@ -43,7 +43,7 @@ const addData = async (item, name, start, end) => {
     date_end: end,
   };
 
-  const response = await fetch(`${Config.InvolveAPI}apps/${Config.InvolveID}/reservations`, {
+  await fetch(`${Config.InvolveAPI}apps/${Config.InvolveID}/reservations`, {
     method: 'POST',
     body: JSON.stringify(sendInfo),
     headers: {

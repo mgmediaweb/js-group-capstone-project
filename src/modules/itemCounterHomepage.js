@@ -9,6 +9,6 @@ const addCounter = () => {
   counter.setAttribute('aria-current', 'page');
   counter.innerText = `Current Pro Players (${currentPlayersShown.length})`;
   navbarItem.appendChild(counter);
-}
+};
 
 export default addCounter;

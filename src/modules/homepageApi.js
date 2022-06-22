@@ -1,5 +1,6 @@
+/* eslint-disable */
 export async function getHomepageData() {
-  const requestURL = 'https://api.opendota.com/api/proPlayers'
+  const requestURL = 'https://api.opendota.com/api/proPlayers';
   const response = await fetch(requestURL, {
     method: 'GET',
   });
