@@ -33,14 +33,13 @@ export const setLikes = async (item) => {
     },
   });
 
-    const response = await fetch(`${Config.InvolveAPI}apps/${Config.InvolveID}/likes?item_id=${item}`, {
-        method: 'POST',
-        body: JSON.stringify(sendInfo),
-        headers: {
-            'Content-type': 'application/json; charset=UTF-8',
-        },
-    });
+  await fetch(`${Config.InvolveAPI}apps/${Config.InvolveID}/likes?item_id=${item}`, {
+    method: 'POST',
+    body: JSON.stringify(sendInfo),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  });
 
-    setTimeout(loadLikes(), 500);
-    
-}
+  setTimeout(loadLikes(), 500);
+};

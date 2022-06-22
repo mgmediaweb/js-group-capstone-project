@@ -16,6 +16,17 @@ $padding: 10px;
   padding: 0;
 }
 
+a {
+  color: $color-link;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: darken($color-link, 15%);
+    text-decoration: none;
+  }
+}
+
 body {
   background: $color-background url('../assets/background.jpg') no-repeat center center;
   background-attachment: fixed;
@@ -38,15 +49,6 @@ footer {
   padding: $padding*4 0;
   width: 100%;
 
-  a {
-    color: $color-link-footer;
-
-    &:hover {
-      color: $color-link-footer-hover;
-      text-decoration: none;
-    }
-  }
-
   p {
     margin: 0;
     padding: 0;
@@ -62,9 +64,31 @@ footer {
   }
 }
 
+.btn-primary {
+  border-color: $color-link;
+  background-color: $color-link;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: darken($color-link, 15%);
+    background-color: darken($color-link, 15%);
+    box-shadow: 0 0 0 0.25rem transparentize($color-link, 0.66);
+  }
+}
+
 .comment {
   height: 75px;
   resize: none;
+}
+
+.link-footer {
+  color: $color-link-footer;
+
+  &:hover {
+    color: $color-link-footer-hover;
+    text-decoration: none;
+  }
 }
 
 .logo {
