@@ -11,7 +11,6 @@ export const loadLikes = async () => {
   if (response.status !== 400) {
     const results = await response.json();
     results.map((item) => {
-      // console.log(item);
       if (item.item_id != null) {
         document.getElementById(`likes${item.item_id}`).innerHTML = `${item.likes} Likes`;
       }
@@ -24,14 +23,6 @@ export const setLikes = async (item) => {
   const sendInfo = {
     item_id: item,
   };
-
-  await fetch(`${Config.InvolveAPI}apps/${Config.InvolveID}/likes?item_id=${item}`, {
-    method: 'POST',
-    body: JSON.stringify(sendInfo),
-    headers: {
-      'Content-type': 'application/json; charset=UTF-8',
-    },
-  });
 
   await fetch(`${Config.InvolveAPI}apps/${Config.InvolveID}/likes?item_id=${item}`, {
     method: 'POST',
