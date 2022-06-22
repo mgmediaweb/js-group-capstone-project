@@ -8,6 +8,8 @@ For this we are using the [OpenDota API](https://docs.opendota.com/), getting th
 
 ## Team Video
 
+https://user-images.githubusercontent.com/96924302/175106342-639b7cc1-ef04-425c-b84c-b784440f5cd5.mp4
+
 ## Built With
 
 - HTML5
