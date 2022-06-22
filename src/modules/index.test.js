@@ -31,3 +31,9 @@ describe('Show counter for counter +1 for comments/reservations', () => {
     expect(counter.showCounter(newData)).toBe(3);
   });
 });
+
+describe('Test counter for items', () => {
+  test('Item counter', () => {
+    expect(counter.addCounter(dataA)).toBe(2);
+  });
+});

@@ -8,6 +8,8 @@ class Counter {
    if (dataSize === undefined) dataSize = 0;
    return dataSize;
  }
+
+  addCounter = (currentPlayersShown) => currentPlayersShown.length;
 }
 
 module.exports = Counter;
