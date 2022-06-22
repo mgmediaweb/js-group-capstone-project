@@ -1,12 +1,7 @@
 import Config from './config.js';
+import showCounter from './counter.js';
 
 const boardComment = document.getElementById('msjComments');
-
-const showCounter = data => {
-    let dataSize = data.length;
-    if(dataSize == undefined) dataSize = 0;
-    return dataSize;
-}
 
 const showData = data => {
     let content = '';
