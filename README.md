@@ -1,12 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# JS Group Capstone Project
+# DOTA 2
 
 ![image](https://user-images.githubusercontent.com/59999191/200681015-461da618-97bb-4123-9fc8-9d8fab19ac6f.png)
 
-In this project we're going to create a SPA that allows the user to see the Pro Players of the Videogame DOTA 2, their information, such as their ID, username, profile, avatar, etc.
+In this project we created a SPA that allows the user to see the Pro Players of the Videogame DOTA 2, their information, such as their ID, username, profile, avatar, etc.
 
-For this we are using the [OpenDota API](https://docs.opendota.com/), getting the /proPlayers elements and using them in our UI.
+For this we are using the [OpenDota API](https://docs.opendota.com/), getting the /proPlayers elements and using them in our UI. Information generated is real time and can be used by DOTA 2 fans.
 
 ## Team Video
 
